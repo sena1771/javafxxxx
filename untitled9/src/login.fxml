@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="597.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="813.0" layoutY="14.0" text="WELCOME!">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="748.0" layoutY="83.0" prefHeight="50.0" prefWidth="359.0" text="Please insert your controller card" />
+      <Label fx:id="errorMessage" layoutX="755.0" layoutY="204.0" prefHeight="27.0" prefWidth="344.0" text="Label" />
+      <CheckBox layoutX="737.0" layoutY="334.0" mnemonicParsing="false" text="Remember Me" />
+      <Button layoutX="869.0" layoutY="432.0" mnemonicParsing="false" text="Update Users" />
+      <Button fx:id="loginButton" layoutX="1050.0" layoutY="426.0" mnemonicParsing="false" onAction="#enterInput" text="Login" />
+      <Button fx:id="shut" layoutX="708.0" layoutY="432.0" mnemonicParsing="false" onAction="#shutDown" text="Shut Down" />
+      <TextField fx:id="enter" layoutX="750.0" layoutY="140.0" onAction="#enterInput" prefHeight="50.0" prefWidth="299.0" promptText="Enter username or email" />
+      <TextField fx:id="password" layoutX="750.0" layoutY="249.0" onAction="#enterInput" prefHeight="50.0" prefWidth="309.0" />
+      <Button fx:id="forgetPassword" layoutX="955.0" layoutY="328.0" mnemonicParsing="false" onAction="#ChangeScene" text="Forget Password?" />
+   </children>
+</AnchorPane>
